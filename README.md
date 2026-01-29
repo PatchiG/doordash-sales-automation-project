@@ -86,7 +86,6 @@ doordash-automation-project/
 │   └── output/                        # Final exports (CSV, summaries)
 ├── tests/
 ├── .env                               # Environment variables
-├── credentials.json                   # Google Sheets service account
 ├── requirements.txt                   # Python dependencies
 └── README.md
 ```
