@@ -38,9 +38,6 @@ Feature Engineering ──> Scored Leads CSV (data/processed/)
        ├──> Google Sheets Export              ──> Team Collaboration
        └──> Vector Store (chroma_db/)         ──> RAG Query Engine ──> Streamlit UI
 ```
-Google Places API:
-
-<img width="1676" height="839" alt="Screenshot 2026-01-28 at 6 32 57 PM" src="https://github.com/user-attachments/assets/282a19a6-cde9-41ec-ac22-a48b4cd6c869" />
 
 The pipeline runs weekly via Apache Airflow, collecting merchant data across five major US cities, scoring each lead on likelihood of conversion, and making the results available through both file exports and an interactive AI-powered dashboard.
 
@@ -203,7 +200,8 @@ python src/data_collection.py
 
 Data Snapshot:
 
-<img width="1676" height="718" alt="Screenshot 2026-01-28 at 6 34 46 PM" src="https://github.com/user-attachments/assets/9558df92-0d02-431f-a7ec-07c68b7c50ec" />
+<img width="1676" height="718" alt="Screenshot 2026-01-28 at 9 17 56 PM" src="https://github.com/user-attachments/assets/19899f56-f85e-4a14-831f-1480963c5b8d" />
+
 
 ---
 
@@ -324,15 +322,23 @@ Access at `http://localhost:8501`.
 
 Access Examples 1:
 
-<img width="1676" height="873" alt="Screenshot 2026-01-28 at 6 31 08 PM" src="https://github.com/user-attachments/assets/b545d02b-32fb-427c-b3df-13f4ee8b5a20" />
+<img width="1676" height="825" alt="Screenshot 2026-01-28 at 9 18 35 PM" src="https://github.com/user-attachments/assets/18531c22-7fc6-4a64-a1f4-0fd6c7beb82c" />
+
 
 Access Examples 2:
 
-<img width="1676" height="873" alt="Screenshot 2026-01-28 at 6 31 31 PM" src="https://github.com/user-attachments/assets/0770830d-ed80-45dc-bf7e-9c435419b20c" />
+<img width="1676" height="825" alt="Screenshot 2026-01-28 at 9 20 10 PM" src="https://github.com/user-attachments/assets/d7837446-2b6e-429b-99ef-766fd91846b6" />
+
 
 Access Examples 3:
 
-<img width="1676" height="869" alt="Screenshot 2026-01-28 at 6 36 39 PM" src="https://github.com/user-attachments/assets/442f42c0-63d3-481a-8d1c-68f7e4c268d4" />
+<img width="1676" height="825" alt="Screenshot 2026-01-28 at 9 21 01 PM" src="https://github.com/user-attachments/assets/00d68148-829d-474f-8041-109f0fab5135" />
+
+Access Examples 4:
+
+<img width="1676" height="825" alt="Screenshot 2026-01-28 at 9 21 50 PM" src="https://github.com/user-attachments/assets/91b0d54b-131d-4ccb-b9c7-64db5ace34a0" />
+
+
 ---
 
 ## Airflow Orchestration
@@ -374,7 +380,8 @@ airflow webserver -D
 airflow dags trigger weekly_leads_generation
 ```
 
-<img width="1676" height="873" alt="Screenshot 2026-01-28 at 6 30 15 PM" src="https://github.com/user-attachments/assets/9445aa21-8d92-42f5-a3f3-8df396420598" />
+<img width="1676" height="875" alt="Screenshot 2026-01-28 at 9 22 15 PM" src="https://github.com/user-attachments/assets/cb88192a-87b1-4ae2-b9e7-70f3166e8b0e" />
+
 
 ---
 
@@ -410,7 +417,7 @@ airflow scheduler -D
 # Pipeline runs automatically every Monday at midnight
 ```
 
-<img width="1676" height="873" alt="Screenshot 2026-01-28 at 6 29 41 PM" src="https://github.com/user-attachments/assets/0e5207fc-eb11-4888-9e80-8322b3dd8b1a" />
+<img width="1676" height="875" alt="Screenshot 2026-01-28 at 9 22 34 PM" src="https://github.com/user-attachments/assets/59b66cec-cdf1-4b21-8b38-732c988d042a" />
 
 ---
 
