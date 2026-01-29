@@ -1,6 +1,6 @@
 # DoorDash GTM Sales Intelligence System
 
-An end-to-end automated lead generation and sales intelligence platform built for DoorDash's Go-To-Market team. The system discovers potential merchant partners via the Google Places API, scores and prioritizes leads using engineered features, and provides an AI-powered natural language search interface for the sales team.
+An end-to-end automated MVP lead generation and sales intelligence platform built for DoorDash's Go-To-Market team. The system discovers potential merchant partners via the Google Places API, scores and prioritizes leads using engineered features, and provides an AI-powered natural language search interface for the sales team. Currently this is the first version of the whole platform, and further changes and updates will be added based on the future scopr for the project.
 
 ## Table of Contents
 
@@ -38,6 +38,9 @@ Feature Engineering ──> Scored Leads CSV (data/processed/)
        ├──> Google Sheets Export              ──> Team Collaboration
        └──> Vector Store (chroma_db/)         ──> RAG Query Engine ──> Streamlit UI
 ```
+Google Places API:
+
+<img width="1676" height="839" alt="Screenshot 2026-01-28 at 6 32 57 PM" src="https://github.com/user-attachments/assets/282a19a6-cde9-41ec-ac22-a48b4cd6c869" />
 
 The pipeline runs weekly via Apache Airflow, collecting merchant data across five major US cities, scoring each lead on likelihood of conversion, and making the results available through both file exports and an interactive AI-powered dashboard.
 
@@ -198,6 +201,10 @@ Fetches merchant data from the Google Places API across all configured cities an
 python src/data_collection.py
 ```
 
+Data Snapshot:
+
+<img width="1676" height="718" alt="Screenshot 2026-01-28 at 6 34 46 PM" src="https://github.com/user-attachments/assets/9558df92-0d02-431f-a7ec-07c68b7c50ec" />
+
 ---
 
 ### 2. Feature Engineering & Lead Scoring
@@ -315,6 +322,17 @@ streamlit run streamlit_app/app.py --server.headless true
 
 Access at `http://localhost:8501`.
 
+Access Examples 1:
+
+<img width="1676" height="873" alt="Screenshot 2026-01-28 at 6 31 08 PM" src="https://github.com/user-attachments/assets/b545d02b-32fb-427c-b3df-13f4ee8b5a20" />
+
+Access Examples 2:
+
+<img width="1676" height="873" alt="Screenshot 2026-01-28 at 6 31 31 PM" src="https://github.com/user-attachments/assets/0770830d-ed80-45dc-bf7e-9c435419b20c" />
+
+Access Examples 3:
+
+<img width="1676" height="869" alt="Screenshot 2026-01-28 at 6 36 39 PM" src="https://github.com/user-attachments/assets/442f42c0-63d3-481a-8d1c-68f7e4c268d4" />
 ---
 
 ## Airflow Orchestration
@@ -356,6 +374,8 @@ airflow webserver -D
 airflow dags trigger weekly_leads_generation
 ```
 
+<img width="1676" height="873" alt="Screenshot 2026-01-28 at 6 30 15 PM" src="https://github.com/user-attachments/assets/9445aa21-8d92-42f5-a3f3-8df396420598" />
+
 ---
 
 ## Usage
@@ -390,9 +410,11 @@ airflow scheduler -D
 # Pipeline runs automatically every Monday at midnight
 ```
 
+<img width="1676" height="873" alt="Screenshot 2026-01-28 at 6 29 41 PM" src="https://github.com/user-attachments/assets/0e5207fc-eb11-4888-9e80-8322b3dd8b1a" />
+
 ---
 
-## Data Pipeline Flow
+## Current Data Pipeline Flow
 
 ```
                     ┌──────────────────────────┐
@@ -441,3 +463,29 @@ airflow scheduler -D
                        │ localhost:8501 │
                        └────────────────┘
 ```
+
+## Future Plans for Project
+1. ### Additional APIs/ Competitor Scrapping Scripts:
+   - Yelp Fusion API: Integrate Yelp API in the data collection stage to extract additional local businesses and key information. Yelp generally has better reviews about a business aloowing us to better gauge the customers sentiment.
+   - Salesforce CRM Integration: Will be integrated in the future (currently do not hold any account).
+   - Scrape data from Uber Eats, Instacart, Grubhub: Currently proxy data has been used to justify whether a store is present in uber eats or not. In the future scope I intend to legally scrape or use paid APIs to collect competitors merchants in a particular localty.
+  
+2. ### Upgrade Current Lead Scoring System:
+   - The curren scoring system works on few factors deemed important from my research. But I intend to add additional fields that help in scoring the importance of a lead.
+     
+3. ### Export to Google Sheets:
+   - Currently the script to push data to google sheeets and API have been initiated. But due to exceeding cost issues, I have not added them to the airflow DAGS.
+   - Hence they will be further added into the project either by creating an app script that downloads data which will to sent through automated emails and pasted to the google sheets.
+     - These sheets will then be shared with the sales executives as an additional copy.
+
+4. ### Streamlit App:
+   - Currently the RAG model works on chromadb. Hence might be a factor for slower loading and slower response of the streamlit application.
+   - The UI for streamlit can be further enhanced to make it user firendly which can be done based on stakeholder inputs and efforts will be made to easily integrate into their current workflow.
+   - The categories of the store/restaurant requires additional work to clearly distinguish each store and this improves readability and basic idea of store selling items.
+
+5. ### Automated notifications about airflow dags:
+   - Set automated notifications to slack channels and email updates on the data availability giving a visibility on the progress of the project and if there were any bugs through out the process.
+  
+This project was quickly implemented using modern AI assisted development workflows, Claude Code. The AI tools helped with:
+- Debugging and error resolution
+- Documentation drafting
