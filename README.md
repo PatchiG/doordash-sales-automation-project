@@ -59,39 +59,6 @@ The pipeline runs weekly via Apache Airflow, collecting merchant data across fiv
 
 ---
 
-## Project Structure
-
-```
-doordash-automation-project/
-├── airflow/
-│   ├── dags/
-│   │   └── leads_generation.py        # Airflow DAG (weekly pipeline)
-│   ├── logs/
-│   └── plugins/
-├── rag_system/
-│   ├── create_vectorstore.py          # Build vector embeddings from leads
-│   └── query_engine.py               # LangChain RAG query interface
-├── src/
-│   ├── config.py                      # Centralized configuration
-│   ├── data_collection.py            # Google Places API integration
-│   ├── feature_engineering.py        # Lead scoring and feature creation
-│   ├── export_leads.py               # CSV export by vertical
-│   ├── export_google_sheets.py       # Google Sheets export
-│   └── utils.py                       # Utility functions
-├── streamlit_app/
-│   └── app.py                         # Interactive web dashboard
-├── data/
-│   ├── raw/                           # Raw business data from API
-│   ├── processed/                     # Scored and enriched leads
-│   └── output/                        # Final exports (CSV, summaries)
-├── tests/
-├── .env                               # Environment variables
-├── requirements.txt                   # Python dependencies
-└── README.md
-```
-
----
-
 ## Setup & Installation
 
 ### Prerequisites
