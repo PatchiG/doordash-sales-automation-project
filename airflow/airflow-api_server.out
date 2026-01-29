@@ -1,0 +1,870 @@
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+INFO:     127.0.0.1:59247 - "GET /login/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET /ui/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET /ui/auth/menus HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/plugins HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/importErrors?limit=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/~/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/~/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET /api/v2/plugins/importErrors HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/dashboard/historical_metrics_data?start_date=2026-01-27T22%3A42%3A58.923Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/pools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET /api/v2/assets/events?limit=6&order_by=-timestamp&timestamp_gte=2026-01-27T22%3A42%3A58.923Z&timestamp_lte=2026-01-28T22%3A42%3A58.923Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/dags?limit=10&is_favorite=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET /ui/backfills?dag_id=weekly_leads_generation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/details HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/assets/events?limit=10&order_by=-timestamp&source_dag_id=weekly_leads_generation&timestamp_gte=2026-01-27T22%3A43%3A01.737Z&timestamp_lte=2026-01-28T22%3A43%3A01.737Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/dags/weekly_leads_generation/latest_run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dagWarnings?dag_id=weekly_leads_generation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A10%3A41%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T20%3A59%3A34%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T20%3A38%3A37%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/~/taskInstances?run_after_gte=2026-01-27T22%3A43%3A01.737Z&run_after_lte=2026-01-28T22%3A43%3A01.737Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/scheduled__2026-01-26T00%3A00%3A00%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T19%3A58%3A17%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns?limit=10&run_after_gte=2026-01-27T22%3A43%3A01.737Z&run_after_lte=2026-01-28T22%3A43%3A01.737Z&state=failed HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/structure/structure_data?dag_id=weekly_leads_generation&external_dependencies=false&version_number=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET /api/v2/dags/weekly_leads_generation/details HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/details HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "PATCH /api/v2/dags/weekly_leads_generation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/details HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/~/taskInstances?run_after_gte=2026-01-27T22%3A43%3A01.737Z&run_after_lte=2026-01-28T22%3A43%3A01.737Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns?limit=10&run_after_gte=2026-01-27T22%3A43%3A01.737Z&run_after_lte=2026-01-28T22%3A43%3A01.737Z&state=failed HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/dags/weekly_leads_generation/latest_run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "PATCH /api/v2/dags/weekly_leads_generation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59295 - "GET /api/v2/dags/weekly_leads_generation/details HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/~/taskInstances?run_after_gte=2026-01-27T22%3A43%3A01.737Z&run_after_lte=2026-01-28T22%3A43%3A01.737Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns?limit=10&run_after_gte=2026-01-27T22%3A43%3A01.737Z&run_after_lte=2026-01-28T22%3A43%3A01.737Z&state=failed HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/dags/weekly_leads_generation/latest_run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns?limit=50&offset=0&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/dags/weekly_leads_generation/latest_run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/dags/weekly_leads_generation/latest_run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/dags/weekly_leads_generation/latest_run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "POST /api/v2/dags/weekly_leads_generation/dagRuns HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns?limit=50&offset=0&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/structure/structure_data?dag_id=weekly_leads_generation HTTP/1.1" 200 OK
+2026-01-28T22:43:21.906725Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] hostname=gouthams-macbook-pro.local loc=task_instances.py:199 previous_state=queued ti_id=019c06c6-7f24-7aa4-889c-2868f312d6f9
+2026-01-28T22:43:21.908690Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:212 rows_affected=1 ti_id=019c06c6-7f24-7aa4-889c-2868f312d6f9
+INFO:     127.0.0.1:59295 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59307 - "PATCH /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59307 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+2026-01-28T22:43:22.736006Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] field_count=3 loc=task_instances.py:687 ti_id=019c06c6-7f24-7aa4-889c-2868f312d6f9
+INFO:     127.0.0.1:59307 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/rtif HTTP/1.1" 201 Created
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59325 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59358 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59382 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59407 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59430 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59455 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59479 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59503 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59528 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59547 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59554 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59558 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59566 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59574 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59579 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59585 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59589 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59596 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59602 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59609 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59615 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59627 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59633 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59639 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59646 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59654 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59658 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59667 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59675 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59685 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59691 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59696 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59701 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59711 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59722 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59735 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59754 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59775 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59800 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59823 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59848 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59872 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59898 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59919 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59943 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59968 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59992 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60016 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60034 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60054 - "PUT /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59297 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60054 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/collect_data/businesses_collected HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60054 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/collect_data/return_value HTTP/1.1" 201 Created
+2026-01-28T22:48:56.267037Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:424 new_state=success rows_affected=1 ti_id=019c06c6-7f24-7aa4-889c-2868f312d6f9
+INFO:     127.0.0.1:60054 - "PATCH /execution/task-instances/019c06c6-7f24-7aa4-889c-2868f312d6f9/state HTTP/1.1" 204 No Content
+2026-01-28T22:48:56.718504Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] hostname=gouthams-macbook-pro.local loc=task_instances.py:199 previous_state=queued ti_id=019c06c6-7f25-71ba-aedf-0c3261e9839a
+2026-01-28T22:48:56.719484Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:212 rows_affected=1 ti_id=019c06c6-7f25-71ba-aedf-0c3261e9839a
+INFO:     127.0.0.1:60060 - "PATCH /execution/task-instances/019c06c6-7f25-71ba-aedf-0c3261e9839a/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60060 - "PUT /execution/task-instances/019c06c6-7f25-71ba-aedf-0c3261e9839a/heartbeat HTTP/1.1" 204 No Content
+2026-01-28T22:48:57.512956Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] field_count=3 loc=task_instances.py:687 ti_id=019c06c6-7f25-71ba-aedf-0c3261e9839a
+INFO:     127.0.0.1:60060 - "PUT /execution/task-instances/019c06c6-7f25-71ba-aedf-0c3261e9839a/rtif HTTP/1.1" 201 Created
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60060 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/engineer_features/leads_scored HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60060 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/engineer_features/avg_lead_score HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60060 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/engineer_features/output_path HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60060 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/engineer_features/return_value HTTP/1.1" 201 Created
+2026-01-28T22:48:57.600232Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:424 new_state=success rows_affected=1 ti_id=019c06c6-7f25-71ba-aedf-0c3261e9839a
+INFO:     127.0.0.1:60060 - "PATCH /execution/task-instances/019c06c6-7f25-71ba-aedf-0c3261e9839a/state HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+2026-01-28T22:48:57.765154Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] hostname=gouthams-macbook-pro.local loc=task_instances.py:199 previous_state=queued ti_id=019c06c6-7f26-7630-b4f9-6243b1b097e0
+2026-01-28T22:48:57.765669Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:212 rows_affected=1 ti_id=019c06c6-7f26-7630-b4f9-6243b1b097e0
+INFO:     127.0.0.1:60062 - "PATCH /execution/task-instances/019c06c6-7f26-7630-b4f9-6243b1b097e0/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60062 - "PUT /execution/task-instances/019c06c6-7f26-7630-b4f9-6243b1b097e0/heartbeat HTTP/1.1" 204 No Content
+2026-01-28T22:48:58.295219Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] field_count=3 loc=task_instances.py:687 ti_id=019c06c6-7f26-7630-b4f9-6243b1b097e0
+INFO:     127.0.0.1:60062 - "PUT /execution/task-instances/019c06c6-7f26-7630-b4f9-6243b1b097e0/rtif HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60062 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/export_csv/total_exported HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60062 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/export_csv/exported_files HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60062 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/export_csv/combined_file HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60062 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/export_csv/summary_file HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60062 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/export_csv/return_value HTTP/1.1" 201 Created
+2026-01-28T22:48:58.348873Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:424 new_state=success rows_affected=1 ti_id=019c06c6-7f26-7630-b4f9-6243b1b097e0
+INFO:     127.0.0.1:60062 - "PATCH /execution/task-instances/019c06c6-7f26-7630-b4f9-6243b1b097e0/state HTTP/1.1" 204 No Content
+2026-01-28T22:48:58.803717Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] hostname=gouthams-macbook-pro.local loc=task_instances.py:199 previous_state=queued ti_id=019c06c6-7f27-7bc4-aaa5-31e99d1fc33e
+2026-01-28T22:48:58.804605Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:212 rows_affected=1 ti_id=019c06c6-7f27-7bc4-aaa5-31e99d1fc33e
+INFO:     127.0.0.1:60064 - "PATCH /execution/task-instances/019c06c6-7f27-7bc4-aaa5-31e99d1fc33e/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60064 - "PUT /execution/task-instances/019c06c6-7f27-7bc4-aaa5-31e99d1fc33e/heartbeat HTTP/1.1" 204 No Content
+2026-01-28T22:48:59.457820Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] field_count=3 loc=task_instances.py:687 ti_id=019c06c6-7f27-7bc4-aaa5-31e99d1fc33e
+INFO:     127.0.0.1:60064 - "PUT /execution/task-instances/019c06c6-7f27-7bc4-aaa5-31e99d1fc33e/rtif HTTP/1.1" 201 Created
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /ui/grid/structure/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60069 - "PUT /execution/task-instances/019c06c6-7f27-7bc4-aaa5-31e99d1fc33e/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:60069 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/update_vector_store/vector_store_size HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60069 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/update_vector_store/return_value HTTP/1.1" 201 Created
+2026-01-28T22:49:04.866629Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:424 new_state=success rows_affected=1 ti_id=019c06c6-7f27-7bc4-aaa5-31e99d1fc33e
+INFO:     127.0.0.1:60069 - "PATCH /execution/task-instances/019c06c6-7f27-7bc4-aaa5-31e99d1fc33e/state HTTP/1.1" 204 No Content
+2026-01-28T22:49:05.010290Z [info     ] Task started                   [airflow.api_fastapi.execution_api.routes.task_instances] hostname=gouthams-macbook-pro.local loc=task_instances.py:199 previous_state=queued ti_id=019c06c6-7f28-7dcd-b2b8-5e5d1834a02a
+2026-01-28T22:49:05.010733Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:212 rows_affected=1 ti_id=019c06c6-7f28-7dcd-b2b8-5e5d1834a02a
+INFO:     127.0.0.1:60071 - "PATCH /execution/task-instances/019c06c6-7f28-7dcd-b2b8-5e5d1834a02a/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60071 - "PUT /execution/task-instances/019c06c6-7f28-7dcd-b2b8-5e5d1834a02a/heartbeat HTTP/1.1" 204 No Content
+2026-01-28T22:49:05.755920Z [info     ] Updating RenderedTaskInstanceFields [airflow.api_fastapi.execution_api.routes.task_instances] field_count=3 loc=task_instances.py:687 ti_id=019c06c6-7f28-7dcd-b2b8-5e5d1834a02a
+INFO:     127.0.0.1:60071 - "PUT /execution/task-instances/019c06c6-7f28-7dcd-b2b8-5e5d1834a02a/rtif HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60071 - "GET /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/collect_data/businesses_collected/slice HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60071 - "GET /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/engineer_features/leads_scored/slice HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60071 - "GET /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/engineer_features/avg_lead_score/slice HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60071 - "GET /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/export_csv/total_exported/slice HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60071 - "GET /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/update_vector_store/vector_store_size/slice HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60071 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/generate_notification/notification_html HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60071 - "POST /execution/xcoms/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00/generate_notification/return_value HTTP/1.1" 201 Created
+2026-01-28T22:49:05.787618Z [info     ] Task instance state updated    [airflow.api_fastapi.execution_api.routes.task_instances] loc=task_instances.py:424 new_state=success rows_affected=1 ti_id=019c06c6-7f28-7dcd-b2b8-5e5d1834a02a
+INFO:     127.0.0.1:60071 - "PATCH /execution/task-instances/019c06c6-7f28-7dcd-b2b8-5e5d1834a02a/state HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:59304 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59304 - "GET /ui/grid/ti_summaries/weekly_leads_generation/manual__2026-01-28T22%3A43%3A14%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /ui/grid/runs/weekly_leads_generation?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59299 - "GET /api/v2/dags/weekly_leads_generation/dagRuns/manual__2026-01-28T22%3A43%3A14%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61426 - "GET /ui/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61433 - "GET /api/v2/plugins/importErrors HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61433 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61434 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61432 - "GET /api/v2/importErrors?limit=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61433 - "GET /ui/auth/menus HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61428 - "GET /api/v2/dags/~/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61429 - "GET /api/v2/dags/~/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61434 - "GET /ui/dashboard/historical_metrics_data?start_date=2026-01-27T23%3A30%3A08.553Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61432 - "GET /api/v2/pools HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61428 - "GET /api/v2/plugins HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61433 - "GET /api/v2/assets/events?limit=6&order_by=-timestamp&timestamp_gte=2026-01-27T23%3A30%3A08.553Z&timestamp_lte=2026-01-28T23%3A30%3A08.553Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61426 - "GET /ui/dags?limit=10&is_favorite=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61548 - "GET /api/v2/dags/~/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK

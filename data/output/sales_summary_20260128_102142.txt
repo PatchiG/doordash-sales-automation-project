@@ -1,0 +1,48 @@
+======================================================================
+DOORDASH GTM - QUARTERLY LEADS GENERATION SUMMARY
+======================================================================
+Generated: 2026-01-28 10:21:42
+Quarter: Q1 2026
+======================================================================
+
+TOTAL LEADS: 200
+
+
+RESTAURANTS
+----------------------------------------------------------------------
+Total Leads: 200
+Average Score: 91.7
+Average Rating: 4.11
+Total Reviews: 327,156
+
+Priority Breakdown:
+  Critical: 123 (61.5%)
+  High: 77 (38.5%)
+
+Top 5 Leads:
+  - ShopRite of Norwalk (New York)
+    Score: 100, Rating: 4.3, Reviews: 2,245
+  - Made In New York Pizza (New York)
+    Score: 100, Rating: 4.6, Reviews: 1,220
+  - QFC (Seattle)
+    Score: 100, Rating: 4.2, Reviews: 1,653
+  - Meijer (Chicago)
+    Score: 100, Rating: 4.4, Reviews: 2,219
+  - Pete's Fresh Market #10 - Madison & Western (Chicago)
+    Score: 100, Rating: 4.4, Reviews: 6,426
+
+======================================================================
+FILES EXPORTED:
+======================================================================
+  - restaurants_leads_20260128_102142.csv
+  - all_leads_combined_20260128_102142.csv
+  - sales_summary_20260128_102142.txt
+
+======================================================================
+NEXT STEPS:
+======================================================================
+1. Review lead files by vertical
+2. Distribute to appropriate sales teams
+3. Prioritize High/Critical priority leads for immediate outreach
+4. Follow contact_by_date SLAs for each lead
+5. Track conversion rates and update scoring model

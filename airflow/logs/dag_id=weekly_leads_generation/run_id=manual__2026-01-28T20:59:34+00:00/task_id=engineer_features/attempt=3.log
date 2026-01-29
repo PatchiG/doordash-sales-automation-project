@@ -1,0 +1,62 @@
+{"timestamp":"2026-01-28T21:25:03.844214Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-28T21:25:03.844594Z","level":"info","event":"Filling up the DagBag from /Users/patchi.g/doordash-automation-project/airflow/dags/leads_generation.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-28T21:25:03.940705Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-28T21:25:03.940878Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-28T21:25:03.941047Z","level":"info","event":"Current task name:engineer_features","logger":"task.stdout"}
+{"timestamp":"2026-01-28T21:25:03.941127Z","level":"info","event":"Dag name:weekly_leads_generation","logger":"task.stdout"}
+{"timestamp":"2026-01-28T21:25:03.944950Z","level":"info","event":"Starting feature engineering task","logger":"unusual_prefix_33ff983d312f0aded6bc88c2f04ea97767e27876_leads_generation","filename":"leads_generation.py","lineno":78}
+{"timestamp":"2026-01-28T21:25:03.945216Z","level":"info","event":"Loading data from: /Users/patchi.g/doordash-automation-project/data/raw/businesses_20260128_162501.csv","logger":"feature_engineering","filename":"feature_engineering.py","lineno":43}
+{"timestamp":"2026-01-28T21:25:03.953551Z","level":"info","event":"Loaded 578 records","logger":"feature_engineering","filename":"feature_engineering.py","lineno":46}
+{"timestamp":"2026-01-28T21:25:03.953617Z","level":"info","event":"Cleaning data","logger":"feature_engineering","filename":"feature_engineering.py","lineno":62}
+{"timestamp":"2026-01-28T21:25:03.961117Z","level":"info","event":"Data cleaned: 578 records","logger":"feature_engineering","filename":"feature_engineering.py","lineno":82}
+{"timestamp":"2026-01-28T21:25:03.961364Z","level":"info","event":"Engineering features","logger":"feature_engineering","filename":"feature_engineering.py","lineno":98}
+{"timestamp":"2026-01-28T21:25:03.972264Z","level":"info","event":"Features engineered for 578 records","logger":"feature_engineering","filename":"feature_engineering.py","lineno":144}
+{"timestamp":"2026-01-28T21:25:03.972586Z","level":"info","event":"  High demand category: 279 (48.3%)","logger":"feature_engineering","filename":"feature_engineering.py","lineno":145}
+{"timestamp":"2026-01-28T21:25:03.972920Z","level":"info","event":"  Urban location: 578 (100.0%)","logger":"feature_engineering","filename":"feature_engineering.py","lineno":146}
+{"timestamp":"2026-01-28T21:25:03.973219Z","level":"info","event":"  High rating: 493 (85.3%)","logger":"feature_engineering","filename":"feature_engineering.py","lineno":147}
+{"timestamp":"2026-01-28T21:25:03.973369Z","level":"info","event":"Calculating lead scores","logger":"feature_engineering","filename":"feature_engineering.py","lineno":163}
+{"timestamp":"2026-01-28T21:25:03.995127Z","level":"info","event":"Scored 578 leads","logger":"feature_engineering","filename":"feature_engineering.py","lineno":252}
+{"timestamp":"2026-01-28T21:25:03.995350Z","level":"info","event":"Score Distribution:","logger":"feature_engineering","filename":"feature_engineering.py","lineno":253}
+{"timestamp":"2026-01-28T21:25:03.998075Z","level":"info","event":"  Low: 26 (4.5%)","logger":"feature_engineering","filename":"feature_engineering.py","lineno":255}
+{"timestamp":"2026-01-28T21:25:03.998152Z","level":"info","event":"  Medium: 86 (14.9%)","logger":"feature_engineering","filename":"feature_engineering.py","lineno":255}
+{"timestamp":"2026-01-28T21:25:03.998185Z","level":"info","event":"  High: 319 (55.2%)","logger":"feature_engineering","filename":"feature_engineering.py","lineno":255}
+{"timestamp":"2026-01-28T21:25:03.998210Z","level":"info","event":"  Critical: 147 (25.4%)","logger":"feature_engineering","filename":"feature_engineering.py","lineno":255}
+{"timestamp":"2026-01-28T21:25:03.998282Z","level":"info","event":"============================================================","logger":"feature_engineering","filename":"feature_engineering.py","lineno":268}
+{"timestamp":"2026-01-28T21:25:03.998304Z","level":"info","event":"SCORING MODEL VALIDATION","logger":"feature_engineering","filename":"feature_engineering.py","lineno":269}
+{"timestamp":"2026-01-28T21:25:03.998326Z","level":"info","event":"============================================================","logger":"feature_engineering","filename":"feature_engineering.py","lineno":270}
+{"timestamp":"2026-01-28T21:25:03.998346Z","level":"info","event":"Score Distribution:","logger":"feature_engineering","filename":"feature_engineering.py","lineno":273}
+{"timestamp":"2026-01-28T21:25:03.998408Z","level":"info","event":"  Mean: 79.5","logger":"feature_engineering","filename":"feature_engineering.py","lineno":274}
+{"timestamp":"2026-01-28T21:25:04.002181Z","level":"info","event":"  Median: 80.0","logger":"feature_engineering","filename":"feature_engineering.py","lineno":275}
+{"timestamp":"2026-01-28T21:25:04.004075Z","level":"info","event":"  Std Dev: 14.3","logger":"feature_engineering","filename":"feature_engineering.py","lineno":276}
+{"timestamp":"2026-01-28T21:25:04.004369Z","level":"info","event":"  Min: 35","logger":"feature_engineering","filename":"feature_engineering.py","lineno":277}
+{"timestamp":"2026-01-28T21:25:04.004789Z","level":"info","event":"  Max: 100","logger":"feature_engineering","filename":"feature_engineering.py","lineno":278}
+{"timestamp":"2026-01-28T21:25:04.004885Z","level":"info","event":"\nTop 10 Leads:","logger":"feature_engineering","filename":"feature_engineering.py","lineno":281}
+{"timestamp":"2026-01-28T21:25:04.013164Z","level":"info","event":"  Foodmaxx                                 | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.013429Z","level":"info","event":"  Berkeley Bowl Marketplace                | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.013523Z","level":"info","event":"  Safeway                                  | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.013600Z","level":"info","event":"  Foodmaxx                                 | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.013674Z","level":"info","event":"  Safeway                                  | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.013729Z","level":"info","event":"  Safeway                                  | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.013886Z","level":"info","event":"  Safeway                                  | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.013972Z","level":"info","event":"  Safeway                                  | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.014031Z","level":"info","event":"  Safeway                                  | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.014082Z","level":"info","event":"  Chavez Supermarket                       | San Francisco   | Score: 100 | Critical","logger":"feature_engineering","filename":"feature_engineering.py","lineno":285}
+{"timestamp":"2026-01-28T21:25:04.016650Z","level":"info","event":"\nCorrelation with Expected Conversion: 0.732","logger":"feature_engineering","filename":"feature_engineering.py","lineno":289}
+{"timestamp":"2026-01-28T21:25:04.016686Z","level":"info","event":"  Model shows strong predictive power","logger":"feature_engineering","filename":"feature_engineering.py","lineno":291}
+{"timestamp":"2026-01-28T21:25:04.016711Z","level":"info","event":"\nAverage Score by Vertical:","logger":"feature_engineering","filename":"feature_engineering.py","lineno":296}
+{"timestamp":"2026-01-28T21:25:04.018689Z","level":"info","event":"  restaurants    : 79.5 (n=578)","logger":"feature_engineering","filename":"feature_engineering.py","lineno":299}
+{"timestamp":"2026-01-28T21:25:04.018730Z","level":"info","event":"\nPriority Distribution by Vertical:","logger":"feature_engineering","filename":"feature_engineering.py","lineno":302}
+{"timestamp":"2026-01-28T21:25:04.026786Z","level":"info","event":"  restaurants    :","logger":"feature_engineering","filename":"feature_engineering.py","lineno":305}
+{"timestamp":"2026-01-28T21:25:04.027523Z","level":"info","event":" Low:   4.5%","logger":"feature_engineering","filename":"feature_engineering.py","lineno":309}
+{"timestamp":"2026-01-28T21:25:04.027722Z","level":"info","event":" Medium:  14.9%","logger":"feature_engineering","filename":"feature_engineering.py","lineno":309}
+{"timestamp":"2026-01-28T21:25:04.027825Z","level":"info","event":" High:  55.2%","logger":"feature_engineering","filename":"feature_engineering.py","lineno":309}
+{"timestamp":"2026-01-28T21:25:04.027915Z","level":"info","event":" Critical:  25.4%","logger":"feature_engineering","filename":"feature_engineering.py","lineno":309}
+{"timestamp":"2026-01-28T21:25:04.027947Z","level":"info","event":"","logger":"feature_engineering","filename":"feature_engineering.py","lineno":310}
+{"timestamp":"2026-01-28T21:25:04.027980Z","level":"info","event":"============================================================","logger":"feature_engineering","filename":"feature_engineering.py","lineno":312}
+{"timestamp":"2026-01-28T21:25:04.034915Z","level":"info","event":"Saved processed data to /Users/patchi.g/doordash-automation-project/data/processed/scored_leads_20260128_162504.csv","logger":"feature_engineering","filename":"feature_engineering.py","lineno":330}
+{"timestamp":"2026-01-28T21:25:04.035047Z","level":"info","event":"Feature engineering completed: 578 leads, avg score: 79.5","logger":"unusual_prefix_33ff983d312f0aded6bc88c2f04ea97767e27876_leads_generation","filename":"leads_generation.py","lineno":96}
+{"timestamp":"2026-01-28T21:25:04.049397Z","level":"info","event":"Done. Returned value was: /Users/patchi.g/doordash-automation-project/data/processed/scored_leads_20260128_162504.csv","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-28T21:25:04.049571Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019c067a-275f-74d1-8fe0-94988e531b81'), task_id='engineer_features', dag_id='weekly_leads_generation', run_id='manual__2026-01-28T20:59:34+00:00', try_number=3, dag_version_id=UUID('019c0624-b4b2-757d-bdd9-5f2febd436ce'), map_index=-1, hostname='gouthams-macbook-pro.local', context_carrier={}, task=<Task(PythonOperator): engineer_features>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=4, start_date=datetime.datetime(2026, 1, 28, 21, 25, 2, 416013, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1450}
+{"timestamp":"2026-01-28T21:25:04.072832Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-28T21:25:04.072898Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-28T21:25:04.073499Z","level":"info","event":"Task operator:<Task(PythonOperator): engineer_features>","logger":"task.stdout"}

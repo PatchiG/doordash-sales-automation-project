@@ -1,0 +1,76 @@
+::group::Log message source detailssources=["/Users/patchi.g/doordash-automation-project/airflow/logs/dag_id=weekly_leads_generation/run_id=manual__2026-01-28T20:38:37+00:00/task_id=export_google_sheets/attempt=3.log"] 
+::endgroup::
+[2026-01-28T20:53:09.710811Z] INFO - DAG bundles loaded: dags-folder, example_dags
+[2026-01-28T20:53:09.711020Z] INFO - Filling up the DagBag from /Users/patchi.g/doordash-automation-project/airflow/dags/leads_generation.py
+[2026-01-28T20:53:09.733468Z] INFO - Task instance is in running state
+[2026-01-28T20:53:09.733528Z] INFO -  Previous state of the Task instance: TaskInstanceState.QUEUED
+[2026-01-28T20:53:09.733796Z] INFO - Current task name:export_google_sheets
+[2026-01-28T20:53:09.733818Z] INFO - Dag name:weekly_leads_generation
+[2026-01-28T20:53:09.897413Z] INFO - Starting Google Sheets export task
+[2026-01-28T20:53:09.897494Z] INFO - ============================================================
+[2026-01-28T20:53:09.897525Z] INFO - GOOGLE SHEETS EXPORT
+[2026-01-28T20:53:09.897548Z] INFO - ============================================================
+[2026-01-28T20:53:09.897571Z] INFO - Authenticating with Google Sheets API
+[2026-01-28T20:53:09.972627Z] INFO - Authentication successful
+[2026-01-28T20:53:09.973078Z] INFO - Loading data from: /Users/patchi.g/doordash-automation-project/data/processed/scored_leads_20260128_154303.csv
+[2026-01-28T20:53:09.982238Z] INFO - Loaded 574 scored leads
+[2026-01-28T20:53:09.982292Z] INFO - Applying vertical-specific filters
+[2026-01-28T20:53:09.986349Z] INFO -   restaurants: 200 leads
+[2026-01-28T20:53:09.986590Z] WARNING -   grocery: No leads found
+[2026-01-28T20:53:09.986748Z] WARNING -   retail: No leads found
+[2026-01-28T20:53:09.987306Z] INFO - Exporting restaurants to Google Sheet: Week5_2026_Restaurants_Leads
+[2026-01-28T20:53:11.373656Z] ERROR - Google Sheets export failed: APIError: [403]: The user's Drive storage quota has been exceeded.
+[2026-01-28T20:53:11.373845Z] ERROR - Google Sheets export failed: APIError: [403]: The user's Drive storage quota has been exceeded.
+[2026-01-28T20:53:11.374088Z] ERROR - Task failed with exceptionAPIError: APIError: [403]: The user's Drive storage quota has been exceeded.
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1004 in run
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1405 in _execute_task
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/bases/operator.py, line 417 in wrapper
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py, line 214 in execute
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py, line 237 in execute_callable
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/callback_runner.py, line 82 in run
+    File /Users/patchi.g/doordash-automation-project/airflow/dags/leads_generation.py, line 163 in task_export_google_sheets
+    File /Users/patchi.g/doordash-automation-project/src/export_google_sheets.py, line 319 in export_to_google_sheets
+    File /Users/patchi.g/doordash-automation-project/src/export_google_sheets.py, line 174 in export_vertical_to_sheet
+    File /Users/patchi.g/doordash-automation-project/src/export_google_sheets.py, line 132 in create_or_open_spreadsheet
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/gspread/client.py, line 234 in create
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/gspread/http_client.py, line 128 in request
+,SpreadsheetNotFound: <Response [200]>
+    File /Users/patchi.g/doordash-automation-project/src/export_google_sheets.py, line 129 in create_or_open_spreadsheet
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/gspread/client.py, line 152 in open
+,StopIteration: 
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/gspread/client.py, line 147 in open
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/gspread/utils.py, line 224 in finditem
+
+[2026-01-28T20:53:11.375476Z] INFO - Task instance in failure state
+[2026-01-28T20:53:11.376754Z] INFO - Task start
+[2026-01-28T20:53:11.376837Z] INFO - Task:<Task(PythonOperator): export_google_sheets>
+[2026-01-28T20:53:11.376888Z] INFO - Failure caused by APIError: [403]: The user's Drive storage quota has been exceeded.
+[2026-01-28T20:53:11.386450Z] WARNING - Using Connection.get_connection_from_secrets from `airflow.models` is deprecated.Please use `get` on Connection from sdk(`airflow.sdk.Connection`) insteadcategory=DeprecationWarning 
+[2026-01-28T20:53:11.404836Z] INFO - Email alerting: attempt 1
+[2026-01-28T20:53:11.410661Z] INFO - Email alerting: attempt 1
+[2026-01-28T20:53:11.411349Z] ERROR - Top level errorConnectionRefusedError: [Errno 61] Connection refused
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1557 in main
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1535 in finalize
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1357 in _send_task_error_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 79 in send_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 154 in send_email_smtp
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 263 in send_mime_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 306 in _get_smtp_connection
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 255 in __init__
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 341 in connect
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 312 in _get_socket
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py, line 852 in create_connection
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py, line 837 in create_connection
+,ConnectionRefusedError: [Errno 61] Connection refused
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1355 in _send_task_error_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 79 in send_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 154 in send_email_smtp
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 263 in send_mime_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 306 in _get_smtp_connection
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 255 in __init__
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 341 in connect
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 312 in _get_socket
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py, line 852 in create_connection
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py, line 837 in create_connection
+
+[2026-01-28T20:53:11.419735Z] WARNING - Process exited abnormallyexit_code=1 

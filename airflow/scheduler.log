@@ -1,0 +1,196 @@
+2026-01-28T19:43:24.490726Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:24.490970Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:24.491023Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:24.491066Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:24.491100Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:24.491134Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+2026-01-28T19:43:26.517325Z [info     ] Starting the scheduler         [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:1055
+2026-01-28T19:43:26.518803Z [info     ] Loaded executor: :LocalExecutor: [airflow.executors.executor_loader] loc=executor_loader.py:281
+2026-01-28T19:43:26.525470Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T19:43:26.527890Z [info     ] Marked 1 SchedulerJob instances as failed [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2344
+2026-01-28T19:43:27.256111Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:27.256238Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:27.256303Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:27.256344Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:27.256378Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:27.256411Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:43:28.806790Z [info     ] Starting log server on http://[::]:8793 [airflow.utils.serve_logs.core] loc=core.py:50
+WARNING:  ASGI app factory detected. Using it, but please consider setting the --factory flag explicitly.
+INFO:     Started server process [21118]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://:8793 (Press CTRL+C to quit)
+2026-01-28T19:48:26.555922Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T19:53:26.569682Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T19:58:21.180902Z [info     ] Setting next_dagrun for weekly_leads_generation to 2026-02-02 00:00:00+00:00, run_after=2026-02-02 00:00:00+00:00 [airflow.models.dag] loc=dag.py:693
+Dag run  in running state
+Dag information Queued at: 2026-01-28 19:58:21.154400+00:00 version: 1
+Dag run  in running state
+Dag information Queued at: 2026-01-28 19:58:20.408787+00:00 version: 1
+2026-01-28T19:58:21.245121Z [info     ] 2 tasks up for execution:
+	<TaskInstance: weekly_leads_generation.collect_data scheduled__2026-01-26T00:00:00+00:00 [scheduled]>
+	<TaskInstance: weekly_leads_generation.collect_data manual__2026-01-28T19:58:17+00:00 [scheduled]> [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:445
+2026-01-28T19:58:21.245842Z [info     ] DAG weekly_leads_generation has 0/16 running and queued tasks [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:517
+2026-01-28T19:58:21.245910Z [info     ] DAG weekly_leads_generation has 0/16 running and queued tasks [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:517
+2026-01-28T19:58:21.246073Z [info     ] Setting the following tasks to queued state:
+	<TaskInstance: weekly_leads_generation.collect_data scheduled__2026-01-26T00:00:00+00:00 [scheduled]>
+	<TaskInstance: weekly_leads_generation.collect_data manual__2026-01-28T19:58:17+00:00 [scheduled]> [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:656
+2026-01-28T19:58:21.246612Z [info     ] Trying to enqueue tasks: [<TaskInstance: weekly_leads_generation.collect_data scheduled__2026-01-26T00:00:00+00:00 [scheduled]>, <TaskInstance: weekly_leads_generation.collect_data manual__2026-01-28T19:58:17+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32) [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:741
+2026-01-28T19:58:23.105177Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105345Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105308Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105447Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105516Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105507Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105578Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105623Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105619Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105569Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105660Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105675Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105700Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105716Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105770Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105878Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.105960Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.106008Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.854636Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.854749Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.854807Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.854851Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.854888Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:23.854925Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:24.725522Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:24.725747Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:24.725945Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:24.726061Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:24.726162Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:24.726260Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:24.813196Z [info     ] Worker starting up pid=26037   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T19:58:24.813236Z [info     ] Worker starting up pid=26035   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T19:58:24.813723Z [info     ] Worker starting up pid=26036   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T19:58:24.861297Z [info     ] Secrets backends loaded for worker [supervisor] backend_classes=['EnvironmentVariablesBackend', 'MetastoreBackend'] count=2 loc=supervisor.py:1975
+2026-01-28T19:58:24.861311Z [info     ] Secrets backends loaded for worker [supervisor] backend_classes=['EnvironmentVariablesBackend', 'MetastoreBackend'] count=2 loc=supervisor.py:1975
+/Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/supervisor.py:477 DeprecationWarning: This process (pid=26037) is multi-threaded, use of fork() may lead to deadlocks in the child.
+/Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/supervisor.py:477 DeprecationWarning: This process (pid=26035) is multi-threaded, use of fork() may lead to deadlocks in the child.
+2026-01-28T19:58:25.378466Z [info     ] Worker starting up pid=26039   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T19:58:25.613262Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:25.613480Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:25.613642Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:25.613714Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:25.613759Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:25.613801Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T19:58:26.093783Z [info     ] Worker starting up pid=26051   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T19:58:26.666871Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T19:58:27.049527Z [info     ] Worker starting up pid=26053   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T19:58:27.171491Z [info     ] Task finished                  [supervisor] duration=2.313910249999026 exit_code=0 final_state=up_for_retry loc=supervisor.py:1995 task_instance_id=019c062f-7913-7839-bf41-61852479be1d
+2026-01-28T19:58:27.172999Z [info     ] Task finished                  [supervisor] duration=2.3166527499997756 exit_code=0 final_state=up_for_retry loc=supervisor.py:1995 task_instance_id=019c062f-7bf6-7eb6-a4f2-7f406f0c1c37
+2026-01-28T19:58:27.499545Z [info     ] Received executor event with state success for task instance TaskInstanceKey(dag_id='weekly_leads_generation', task_id='collect_data', run_id='manual__2026-01-28T19:58:17+00:00', try_number=1, map_index=-1) [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:819
+2026-01-28T19:58:27.499722Z [info     ] Received executor event with state success for task instance TaskInstanceKey(dag_id='weekly_leads_generation', task_id='collect_data', run_id='scheduled__2026-01-26T00:00:00+00:00', try_number=1, map_index=-1) [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:819
+2026-01-28T19:58:27.513538Z [info     ] TaskInstance Finished: dag_id=weekly_leads_generation, task_id=collect_data, run_id=manual__2026-01-28T19:58:17+00:00, map_index=-1, run_start_date=2026-01-28 19:58:24.880939+00:00, run_end_date=2026-01-28 19:58:27.158383+00:00, run_duration=2.277444, state=up_for_retry, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=2, pool=default_pool, queue=default, priority_weight=6, operator=PythonOperator, queued_dttm=2026-01-28 19:58:21.246189+00:00, scheduled_dttm=2026-01-28 19:58:21.241267+00:00,queued_by_job_id=7, pid=26055 [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:865
+2026-01-28T19:58:27.513672Z [info     ] TaskInstance Finished: dag_id=weekly_leads_generation, task_id=collect_data, run_id=scheduled__2026-01-26T00:00:00+00:00, map_index=-1, run_start_date=2026-01-28 19:58:24.879509+00:00, run_end_date=2026-01-28 19:58:27.158953+00:00, run_duration=2.279444, state=up_for_retry, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=2, pool=default_pool, queue=default, priority_weight=6, operator=PythonOperator, queued_dttm=2026-01-28 19:58:21.246189+00:00, scheduled_dttm=2026-01-28 19:58:21.238796+00:00,queued_by_job_id=7, pid=26054 [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:865
+2026-01-28T20:03:26.698012Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T20:03:27.239601Z [info     ] 2 tasks up for execution:
+	<TaskInstance: weekly_leads_generation.collect_data scheduled__2026-01-26T00:00:00+00:00 [scheduled]>
+	<TaskInstance: weekly_leads_generation.collect_data manual__2026-01-28T19:58:17+00:00 [scheduled]> [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:445
+2026-01-28T20:03:27.239848Z [info     ] DAG weekly_leads_generation has 0/16 running and queued tasks [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:517
+2026-01-28T20:03:27.239924Z [info     ] DAG weekly_leads_generation has 0/16 running and queued tasks [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:517
+2026-01-28T20:03:27.240018Z [info     ] Setting the following tasks to queued state:
+	<TaskInstance: weekly_leads_generation.collect_data scheduled__2026-01-26T00:00:00+00:00 [scheduled]>
+	<TaskInstance: weekly_leads_generation.collect_data manual__2026-01-28T19:58:17+00:00 [scheduled]> [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:656
+2026-01-28T20:03:27.241784Z [info     ] Trying to enqueue tasks: [<TaskInstance: weekly_leads_generation.collect_data scheduled__2026-01-26T00:00:00+00:00 [scheduled]>, <TaskInstance: weekly_leads_generation.collect_data manual__2026-01-28T19:58:17+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32) [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:741
+2026-01-28T20:03:27.409141Z [info     ] Secrets backends loaded for worker [supervisor] backend_classes=['EnvironmentVariablesBackend', 'MetastoreBackend'] count=2 loc=supervisor.py:1975
+/Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/supervisor.py:477 DeprecationWarning: This process (pid=26039) is multi-threaded, use of fork() may lead to deadlocks in the child.
+2026-01-28T20:03:27.475998Z [info     ] Secrets backends loaded for worker [supervisor] backend_classes=['EnvironmentVariablesBackend', 'MetastoreBackend'] count=2 loc=supervisor.py:1975
+/Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/supervisor.py:477 DeprecationWarning: This process (pid=26036) is multi-threaded, use of fork() may lead to deadlocks in the child.
+2026-01-28T20:03:29.010430Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011183Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011257Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011304Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011345Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011384Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.010712Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011462Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011689Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011800Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011856Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.011900Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:03:29.101293Z [info     ] Task finished                  [supervisor] duration=1.6340214160009054 exit_code=0 final_state=up_for_retry loc=supervisor.py:1995 task_instance_id=019c062f-935c-7862-9e1b-35287ed70e4c
+2026-01-28T20:03:29.102307Z [info     ] Task finished                  [supervisor] duration=1.704061291005928 exit_code=0 final_state=up_for_retry loc=supervisor.py:1995 task_instance_id=019c062f-9357-7d08-bb39-abda72d72ed5
+2026-01-28T20:03:30.058222Z [info     ] Received executor event with state success for task instance TaskInstanceKey(dag_id='weekly_leads_generation', task_id='collect_data', run_id='scheduled__2026-01-26T00:00:00+00:00', try_number=2, map_index=-1) [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:819
+2026-01-28T20:03:30.058510Z [info     ] Received executor event with state success for task instance TaskInstanceKey(dag_id='weekly_leads_generation', task_id='collect_data', run_id='manual__2026-01-28T19:58:17+00:00', try_number=2, map_index=-1) [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:819
+2026-01-28T20:03:30.063316Z [info     ] TaskInstance Finished: dag_id=weekly_leads_generation, task_id=collect_data, run_id=manual__2026-01-28T19:58:17+00:00, map_index=-1, run_start_date=2026-01-28 20:03:27.423725+00:00, run_end_date=2026-01-28 20:03:29.086782+00:00, run_duration=1.663057, state=up_for_retry, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=2, pool=default_pool, queue=default, priority_weight=6, operator=PythonOperator, queued_dttm=2026-01-28 20:03:27.240219+00:00, scheduled_dttm=2026-01-28 20:03:27.234953+00:00,queued_by_job_id=7, pid=27553 [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:865
+2026-01-28T20:03:30.063394Z [info     ] TaskInstance Finished: dag_id=weekly_leads_generation, task_id=collect_data, run_id=scheduled__2026-01-26T00:00:00+00:00, map_index=-1, run_start_date=2026-01-28 20:03:27.495956+00:00, run_end_date=2026-01-28 20:03:29.086054+00:00, run_duration=1.590098, state=up_for_retry, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=2, pool=default_pool, queue=default, priority_weight=6, operator=PythonOperator, queued_dttm=2026-01-28 20:03:27.240219+00:00, scheduled_dttm=2026-01-28 20:03:27.229462+00:00,queued_by_job_id=7, pid=27554 [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:865
+2026-01-28T20:03:30.180748Z [info     ] Worker starting up pid=27551   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T20:03:30.180747Z [info     ] Worker starting up pid=27552   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T20:08:26.735528Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T20:08:29.842948Z [info     ] 2 tasks up for execution:
+	<TaskInstance: weekly_leads_generation.collect_data scheduled__2026-01-26T00:00:00+00:00 [scheduled]>
+	<TaskInstance: weekly_leads_generation.collect_data manual__2026-01-28T19:58:17+00:00 [scheduled]> [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:445
+2026-01-28T20:08:29.843514Z [info     ] DAG weekly_leads_generation has 0/16 running and queued tasks [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:517
+2026-01-28T20:08:29.843612Z [info     ] DAG weekly_leads_generation has 0/16 running and queued tasks [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:517
+2026-01-28T20:08:29.843697Z [info     ] Setting the following tasks to queued state:
+	<TaskInstance: weekly_leads_generation.collect_data scheduled__2026-01-26T00:00:00+00:00 [scheduled]>
+	<TaskInstance: weekly_leads_generation.collect_data manual__2026-01-28T19:58:17+00:00 [scheduled]> [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:656
+2026-01-28T20:08:29.844373Z [info     ] Trying to enqueue tasks: [<TaskInstance: weekly_leads_generation.collect_data scheduled__2026-01-26T00:00:00+00:00 [scheduled]>, <TaskInstance: weekly_leads_generation.collect_data manual__2026-01-28T19:58:17+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32) [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:741
+2026-01-28T20:08:30.219613Z [info     ] Secrets backends loaded for worker [supervisor] backend_classes=['EnvironmentVariablesBackend', 'MetastoreBackend'] count=2 loc=supervisor.py:1975
+2026-01-28T20:08:30.224591Z [info     ] Secrets backends loaded for worker [supervisor] backend_classes=['EnvironmentVariablesBackend', 'MetastoreBackend'] count=2 loc=supervisor.py:1975
+/Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/supervisor.py:477 DeprecationWarning: This process (pid=26051) is multi-threaded, use of fork() may lead to deadlocks in the child.
+/Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/supervisor.py:477 DeprecationWarning: This process (pid=26053) is multi-threaded, use of fork() may lead to deadlocks in the child.
+2026-01-28T20:08:31.305380Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305519Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305582Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305628Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305401Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305667Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305551Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305705Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305716Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305734Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305789Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305831Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305866Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305901Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.305886Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.306020Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.306253Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.306358Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T20:08:31.712510Z [info     ] Task finished                  [supervisor] duration=1.5096607919986127 exit_code=1 final_state=failed loc=supervisor.py:1995 task_instance_id=019c0634-2ec3-7695-a95f-04cd197c73a9
+2026-01-28T20:08:31.714610Z [info     ] Task finished                  [supervisor] duration=1.516765458000009 exit_code=1 final_state=failed loc=supervisor.py:1995 task_instance_id=019c0634-2ebe-7e11-b418-1e41b5bfdee7
+2026-01-28T20:08:32.098930Z [info     ] Received executor event with state success for task instance TaskInstanceKey(dag_id='weekly_leads_generation', task_id='collect_data', run_id='manual__2026-01-28T19:58:17+00:00', try_number=3, map_index=-1) [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:819
+2026-01-28T20:08:32.099184Z [info     ] Received executor event with state success for task instance TaskInstanceKey(dag_id='weekly_leads_generation', task_id='collect_data', run_id='scheduled__2026-01-26T00:00:00+00:00', try_number=3, map_index=-1) [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:819
+2026-01-28T20:08:32.101267Z [info     ] TaskInstance Finished: dag_id=weekly_leads_generation, task_id=collect_data, run_id=manual__2026-01-28T19:58:17+00:00, map_index=-1, run_start_date=2026-01-28 20:08:30.255879+00:00, run_end_date=2026-01-28 20:08:31.701368+00:00, run_duration=2.4450000000000003, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=3, max_tries=2, pool=default_pool, queue=default, priority_weight=6, operator=PythonOperator, queued_dttm=2026-01-28 20:08:29.843927+00:00, scheduled_dttm=2026-01-28 20:08:29.837899+00:00,queued_by_job_id=7, pid=28923 [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:865
+2026-01-28T20:08:32.102291Z [info     ] TaskInstance Finished: dag_id=weekly_leads_generation, task_id=collect_data, run_id=scheduled__2026-01-26T00:00:00+00:00, map_index=-1, run_start_date=2026-01-28 20:08:30.245251+00:00, run_end_date=2026-01-28 20:08:31.703337+00:00, run_duration=2.458, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=3, max_tries=2, pool=default_pool, queue=default, priority_weight=6, operator=PythonOperator, queued_dttm=2026-01-28 20:08:29.843927+00:00, scheduled_dttm=2026-01-28 20:08:29.832722+00:00,queued_by_job_id=7, pid=28922 [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:865
+2026-01-28T20:08:32.675045Z [info     ] Worker starting up pid=28921   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T20:08:32.675060Z [info     ] Worker starting up pid=28920   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T20:08:32.675049Z [info     ] Worker starting up pid=28919   [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:65
+2026-01-28T20:08:36.250006Z [info     ] Marking run <DagRun weekly_leads_generation @ 2026-01-26 00:00:00+00:00: scheduled__2026-01-26T00:00:00+00:00, state:running, queued_at: 2026-01-28 19:58:21.154400+00:00. run_type: scheduled> failed [airflow.models.dagrun.DagRun] loc=dagrun.py:1171
+Dag run  in failure state
+Dag information:weekly_leads_generation Run id: scheduled__2026-01-26T00:00:00+00:00 Run type: scheduled
+Failed with message: task_failure
+2026-01-28T20:08:36.251260Z [info     ] DagRun Finished: dag_id=weekly_leads_generation, logical_date=2026-01-26 00:00:00+00:00, run_id=scheduled__2026-01-26T00:00:00+00:00, run_start_date=2026-01-28 19:58:21.209419+00:00, run_end_date=2026-01-28 20:08:36.250649+00:00, run_duration=615.04123, state=failed, run_type=scheduled, data_interval_start=2026-01-26 00:00:00+00:00, data_interval_end=2026-01-26 00:00:00+00:00, [airflow.models.dagrun.DagRun] loc=dagrun.py:1274
+2026-01-28T20:08:36.256384Z [info     ] Setting next_dagrun for weekly_leads_generation to 2026-02-02 00:00:00+00:00, run_after=2026-02-02 00:00:00+00:00 [airflow.models.dag] loc=dag.py:693
+2026-01-28T20:08:36.258695Z [info     ] Marking run <DagRun weekly_leads_generation @ 2026-01-28 19:58:17+00:00: manual__2026-01-28T19:58:17+00:00, state:running, queued_at: 2026-01-28 19:58:20.408787+00:00. run_type: manual> failed [airflow.models.dagrun.DagRun] loc=dagrun.py:1171
+Dag run  in failure state
+Dag information:weekly_leads_generation Run id: manual__2026-01-28T19:58:17+00:00 Run type: manual
+Failed with message: task_failure
+2026-01-28T20:08:36.258815Z [info     ] DagRun Finished: dag_id=weekly_leads_generation, logical_date=2026-01-28 19:58:17+00:00, run_id=manual__2026-01-28T19:58:17+00:00, run_start_date=2026-01-28 19:58:21.219978+00:00, run_end_date=2026-01-28 20:08:36.258761+00:00, run_duration=615.038783, state=failed, run_type=manual, data_interval_start=2026-01-28 19:58:17+00:00, data_interval_end=2026-01-28 19:58:17+00:00, [airflow.models.dagrun.DagRun] loc=dagrun.py:1274
+2026-01-28T20:13:26.566735Z [info     ] checking for stale bundle versions locally [airflow.dag_processing.bundles.base] loc=base.py:223
+2026-01-28T20:13:26.598225Z [info     ] DAG bundles loaded: dags-folder, example_dags [airflow.dag_processing.bundles.manager.DagBundlesManager] loc=manager.py:179
+2026-01-28T20:13:26.759235Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T20:18:26.782645Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T20:23:26.796288Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T20:28:26.819360Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T20:33:26.852020Z [info     ] Adopting or resetting orphaned tasks for active dag runs [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:2321
+2026-01-28T20:35:14.351259Z [info     ] Exiting gracefully upon receiving signal 15 [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:282
+2026-01-28T20:35:14.354996Z [info     ] Shutting down LocalExecutor; waiting for running tasks to finish.  Signal again if you don't want to wait. [airflow.executors.local_executor.LocalExecutor] loc=local_executor.py:252
+2026-01-28T20:35:19.963176Z [info     ] Exited execute loop            [airflow.jobs.scheduler_job_runner.SchedulerJobRunner] loc=scheduler_job_runner.py:1095
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21118]

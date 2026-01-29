@@ -1,0 +1,50 @@
+::group::Log message source detailssources=["/Users/patchi.g/doordash-automation-project/airflow/logs/dag_id=weekly_leads_generation/run_id=manual__2026-01-28T19:58:17+00:00/task_id=collect_data/attempt=3.log"] 
+::endgroup::
+[2026-01-28T20:08:31.500435Z] INFO - DAG bundles loaded: dags-folder, example_dags
+[2026-01-28T20:08:31.500740Z] INFO - Filling up the DagBag from /Users/patchi.g/doordash-automation-project/airflow/dags/leads_generation.py
+[2026-01-28T20:08:31.590312Z] INFO - Task instance is in running state
+[2026-01-28T20:08:31.590439Z] INFO -  Previous state of the Task instance: TaskInstanceState.QUEUED
+[2026-01-28T20:08:31.591221Z] INFO - Current task name:collect_data
+[2026-01-28T20:08:31.591310Z] INFO - Dag name:weekly_leads_generation
+[2026-01-28T20:08:31.665356Z] ERROR - Task failed with exceptionImportError: cannot import name 'collect_multi_city_data' from 'data_collection' (/Users/patchi.g/doordash-automation-project/src/data_collection.py)
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1004 in run
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1405 in _execute_task
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/bases/operator.py, line 417 in wrapper
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py, line 214 in execute
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py, line 237 in execute_callable
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/callback_runner.py, line 82 in run
+    File /Users/patchi.g/doordash-automation-project/airflow/dags/leads_generation.py, line 45 in task_collect_data
+
+[2026-01-28T20:08:31.666351Z] INFO - Task instance in failure state
+[2026-01-28T20:08:31.667211Z] INFO - Task start
+[2026-01-28T20:08:31.667294Z] INFO - Task:<Task(PythonOperator): collect_data>
+[2026-01-28T20:08:31.667367Z] INFO - Failure caused by cannot import name 'collect_multi_city_data' from 'data_collection' (/Users/patchi.g/doordash-automation-project/src/data_collection.py)
+[2026-01-28T20:08:31.672408Z] WARNING - Using Connection.get_connection_from_secrets from `airflow.models` is deprecated.Please use `get` on Connection from sdk(`airflow.sdk.Connection`) insteadcategory=DeprecationWarning 
+[2026-01-28T20:08:31.683274Z] INFO - Email alerting: attempt 1
+[2026-01-28T20:08:31.693367Z] INFO - Email alerting: attempt 1
+[2026-01-28T20:08:31.694715Z] ERROR - Top level errorConnectionRefusedError: [Errno 61] Connection refused
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1557 in main
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1535 in finalize
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1357 in _send_task_error_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 79 in send_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 154 in send_email_smtp
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 263 in send_mime_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 306 in _get_smtp_connection
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 255 in __init__
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 341 in connect
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 312 in _get_socket
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py, line 852 in create_connection
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py, line 837 in create_connection
+,ConnectionRefusedError: [Errno 61] Connection refused
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py, line 1355 in _send_task_error_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 79 in send_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 154 in send_email_smtp
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 263 in send_mime_email
+    File /Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/utils/email.py, line 306 in _get_smtp_connection
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 255 in __init__
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 341 in connect
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py, line 312 in _get_socket
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py, line 852 in create_connection
+    File /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py, line 837 in create_connection
+
+[2026-01-28T20:08:31.701152Z] WARNING - Process exited abnormallyexit_code=1 

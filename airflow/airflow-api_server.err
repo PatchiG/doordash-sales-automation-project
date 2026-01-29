@@ -1,0 +1,19 @@
+2026-01-28T22:38:45.090278Z [info     ] setup plugin alembic.autogenerate.schemas [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T22:38:45.090397Z [info     ] setup plugin alembic.autogenerate.tables [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T22:38:45.090453Z [info     ] setup plugin alembic.autogenerate.types [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T22:38:45.090492Z [info     ] setup plugin alembic.autogenerate.constraints [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T22:38:45.090525Z [info     ] setup plugin alembic.autogenerate.defaults [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T22:38:45.090556Z [info     ] setup plugin alembic.autogenerate.comments [alembic.runtime.plugins] loc=plugins.py:37
+2026-01-28T22:38:46.424716Z [info     ] Running the uvicorn with:
+Apps: all
+Workers: 1
+Host: 0.0.0.0:8080
+Timeout: 120
+Logfiles: -
+================================================================= [airflow.cli.commands.api_server_command] loc=api_server_command.py:54
+/Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/api_fastapi/execution_api/routes/__init__.py:23 DeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+/Users/patchi.g/doordash-automation-project/venv/lib/python3.12/site-packages/airflow/api_fastapi/core_api/routes/public/__init__.py:36 DeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+INFO:     Started server process [73273]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)

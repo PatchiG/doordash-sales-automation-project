@@ -1,0 +1,4 @@
+{"timestamp":"2026-01-28T21:09:14.997510Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-28T21:09:14.998264Z","level":"info","event":"Filling up the DagBag from /Users/patchi.g/doordash-automation-project/airflow/dags/leads_generation.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-28T21:09:15.010195Z","level":"error","event":"Task not found in Dag during start up","dag_id":"weekly_leads_generation","task_id":"export_google_sheets","bundle":"BundleInfo(name='dags-folder', version=None)","path":"leads_generation.py","logger":"task","filename":"task_runner.py","lineno":648}
+{"timestamp":"2026-01-28T21:09:15.055157Z","level":"warning","event":"Process exited abnormally","exit_code":1,"logger":"task"}

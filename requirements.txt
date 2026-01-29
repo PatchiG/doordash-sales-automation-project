@@ -1,0 +1,46 @@
+# Core Data Processing
+pandas
+numpy
+
+# API Clients
+googlemaps
+requests
+
+# Data Quality & Validation
+great-expectations
+
+# Workflow Orchestration
+apache-airflow
+apache-airflow-providers-google
+
+# Database
+SQLAlchemy
+
+# Google Sheets Integration
+gspread
+oauth2client
+
+# OpenStreetMap (backup data source)
+overpy
+
+# RAG System Components
+langchain
+langchain-openai
+openai
+chromadb
+tiktoken
+
+# Streamlit (UI)
+streamlit
+plotly
+
+# Utilities
+python-dotenv
+python-dateutil
+
+# Development & Testing
+pytest
+black
+flake8
+ipykernel
+jupyter
