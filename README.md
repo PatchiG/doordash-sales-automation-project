@@ -328,7 +328,7 @@ The full pipeline is automated as an Airflow DAG named `weekly_leads_generation`
 **Configuration:**
 - 2 retries per task with a 5-minute delay
 - Metrics passed between tasks via Airflow XCom
-- Email notification on failure (configurable)
+- Email notification on failure (Need to be configured with email)
 
 **Setup:**
 
@@ -452,7 +452,7 @@ airflow scheduler -D
      - These sheets will then be shared with the sales executives as an additional copy.
 
 4. ### Streamlit App:
-   - Currently the RAG model works on chromadb. Hence might be a factor for slower loading and slower response of the streamlit application.
+   - Currently the RAG model works on chromadb. Which can be a potential factor for slower loading times and slower response of the streamlit application.
    - The UI for streamlit can be further enhanced to make it user firendly which can be done based on stakeholder inputs and efforts will be made to easily integrate into their current workflow.
    - The categories of the store/restaurant requires additional work to clearly distinguish each store and this improves readability and basic idea of store selling items.
 
