@@ -439,7 +439,7 @@ airflow scheduler -D
 
 ## Future Plans for Project
 1. ### Additional APIs/ Competitor Scrapping Scripts:
-   - Yelp Fusion API: Integrate Yelp API in the data collection stage to extract additional local businesses and key information. Yelp generally has better reviews about a business aloowing us to better gauge the customers sentiment.
+   - Yelp Fusion API: Integrate Yelp API in the data collection stage to extract additional local businesses and key information. Yelp generally has better reviews about a business allowing us to better gauge the customers sentiment.
    - Salesforce CRM Integration: Will be integrated in the future (currently do not hold any account).
    - Scrape data from Uber Eats, Instacart, Grubhub: Currently proxy data has been used to justify whether a store is present in uber eats or not. In the future scope I intend to legally scrape or use paid APIs to collect competitors merchants in a particular localty.
   
