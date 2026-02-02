@@ -1,6 +1,6 @@
 # DoorDash GTM Sales Intelligence System
 
-An end-to-end automated MVP lead generation and sales intelligence platform built for DoorDash's Go-To-Market team. The system discovers potential merchant partners via the Google Places API, scores and prioritizes leads using engineered features, and provides an AI-powered natural language search interface for the sales team. Currently this is the first version of the whole platform, and further changes and updates will be added based on the future scopr for the project.
+An end-to-end automated MVP lead generation and sales intelligence platform built for DoorDash's Go-To-Market team. The system discovers potential merchant partners via the Google Places API, scores and prioritizes leads using engineered features, and provides an AI-powered natural language search interface for the sales team. Currently this is the first version of the whole platform, and further changes and updates will be added based on the future scope for the project.
 
 ## Table of Contents
 
