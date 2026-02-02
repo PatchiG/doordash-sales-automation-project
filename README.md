@@ -444,16 +444,16 @@ airflow scheduler -D
    - Scrape data from Uber Eats, Instacart, Grubhub: Currently proxy data has been used to justify whether a store is present in uber eats or not. In the future scope I intend to legally scrape or use paid APIs to collect competitors merchants in a particular localty.
   
 2. ### Upgrade Current Lead Scoring System:
-   - The curren scoring system works on few factors deemed important from my research. But I intend to add additional fields that help in scoring the importance of a lead.
+   - The current scoring system works on few factors deemed important from my research. But I intend to add additional features or change weights on existing features based on stakeholder communication and improve the lead scoring model.
      
 3. ### Export to Google Sheets:
    - Currently the script to push data to google sheeets and API have been initiated. But due to exceeding cost issues, I have not added them to the airflow DAGS.
-   - Hence they will be further added into the project either by creating an app script that downloads data which will to sent through automated emails and pasted to the google sheets.
-     - These sheets will then be shared with the sales executives as an additional copy.
+   - Hence they will be added into the project in the future either by creating an app script that downloads data which was sent through automated emails and pasted to the google sheets.
+     - These sheets will then be shared with the sales executives as an additional copy, thereby not disturbing their current process flow.
 
 4. ### Streamlit App:
    - Currently the RAG model works on chromadb. Which can be a potential factor for slower loading times and slower response of the streamlit application.
-   - The UI for streamlit can be further enhanced to make it user firendly which can be done based on stakeholder inputs and efforts will be made to easily integrate into their current workflow.
+   - The UI for streamlit can be further enhanced to make it user firendly for stakeholders and sales reps. This will be smoothly introduced into their current leads reasearch process.
    - The categories of the store/restaurant requires additional work to clearly distinguish each store and this improves readability and basic idea of store selling items.
 
 5. ### Automated notifications about airflow dags:
